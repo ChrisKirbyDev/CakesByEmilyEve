@@ -4,28 +4,30 @@
 }
 
 body {
-  background-color: lightblue;
+  background-color: #f1d1d1;
 
 }
 
 header {
   position: fixed;
-  background-color: white;
+  background-color: #faf2f2;
   padding: 0% 5%;
 }
 
 /* Nav Bar */
+
+
 #header-img {
-  height: 10%;
-  width: 10%;
+  height: 1%;
+  width: 6%;
   padding-top: 1%
 }
 
 .nav-link {
   float: right;
-  padding: 5% 5%;
+  padding: 3% 5%;
   text-decoration: none;
-  color: gold;
+  color:black;
 }
 
 /* Email Submission */
@@ -71,10 +73,18 @@ form {
   width: 70%;
 }
 
-#how-it-works {
+#showcase {
   display: flex;
   justify-content: center;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -100;
+  width: 400px;
+  height: 400px;
+
 }
+
 
 /* Pricing */
 
@@ -92,36 +102,36 @@ form {
     border: 3px solid black;
 }
 
-#tenor {
+#box_of_cupcakes {
   display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: calc(100%/3);
     margin: 11px;
-    border: 7px solid rgb(243,112,32);
+    border: 7px solid rgb(0,0,0);
     border-radius: 9px;
 }
 
-#bass {
+#wedding_cakes {
   display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: calc(100%/3);
     margin: 11px;
-    border: 7px solid rgb(243,112,32);
+    border: 7px solid rgb(0,0,0);
     border-radius: 9px;
 }
 
-#valve {
+#celebration_cake {
   display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: calc(100%/3);
     margin: 11px;
-    border: 7px solid rgb(243,112,32);
+    border: 7px solid rgb(0,0,0);
     border-radius: 9px;
 }
 
@@ -137,7 +147,7 @@ form {
   }
 
   .btn:hover {
-   background-color: red;
+   background-color: #7d5a5a;
    transition: background-color 2s;
   }
 
