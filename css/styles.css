@@ -5,6 +5,7 @@
 
 body {
   background-color: lightblue;
+
 }
 
 header {
@@ -38,6 +39,7 @@ form {
 }
 
 /* features */
+
 #features {
   padding: 23px;
 }
@@ -72,4 +74,86 @@ form {
 #how-it-works {
   display: flex;
   justify-content: center;
+}
+
+/* Pricing */
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  margin-top: 71px;
+  justify-content: center;
+  text-align: center;
+}
+
+.img-option {
+    width: 250px;
+    height: 170px;
+    border: 3px solid black;
+}
+
+#tenor {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 11px;
+    border: 7px solid rgb(243,112,32);
+    border-radius: 9px;
+}
+
+#bass {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 11px;
+    border: 7px solid rgb(243,112,32);
+    border-radius: 9px;
+}
+
+#valve {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 11px;
+    border: 7px solid rgb(243,112,32);
+    border-radius: 9px;
+}
+
+.option {
+   font-size: 23px;
+   text-align: center;
+   padding: 7px;
+ }
+
+ .btn {
+    padding: 13px;
+    width: 97px;
+  }
+
+  .btn:hover {
+   background-color: red;
+   transition: background-color 2s;
+  }
+
+  li {
+    text-align: left;
+  }
+
+
+footer {
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 1028px) {
+
+#header {
+  flex-wrap: wrap;
+}
 }
