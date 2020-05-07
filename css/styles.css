@@ -1,169 +1,182 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 body {
-  background-color: #f1d1d1;
-
+font-family: "Montserrat";
+text-align: center;
 }
 
-header {
-  position: fixed;
-  background-color: #faf2f2;
-  padding: 0% 5%;
+h1, h2, h3, h4, h5, h6 {
+font-family: "Oswald";
+font-weight: bold;
+}
+
+p{
+color: #8f8f8f;
+font-family: "Oswald"
+}
+
+/* headings */
+
+.big-heading {
+font-size: 3.5rem;
+font-family: 'Oswald';
+line-height: 1.5;
+font-weight: 800;
+padding: 20%;
+}
+
+.section-heading {
+font-size: 3rem;
+line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid {
+padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+background-color: #f0d9da;
+color: #888888;
+}
+
+.white-section {
+background-color: #f9ecec;
+color: #888888;
 }
 
 /* Nav Bar */
+.navbar {
+padding: 0 0 4.5rem
+}
 
+.navbar-brand {
+font-family: "Oswald";
+font-size: 2.5rem;
+font-weight: bold;
+}
 
-#header-img {
-  height: 1%;
-  width: 6%;
-  padding-top: 1%
+.nav-item {
+padding: 0 18px;
 }
 
 .nav-link {
-  float: right;
-  padding: 3% 5%;
-  text-decoration: none;
-  color:black;
+font-size: 1.2rem;
+font-family: "Oswald"
 }
 
-/* Email Submission */
-form {
-  padding: 11% 0 1% 0;
-  text-align: center;
+.navbar-img {
+  border-radius: 50%;
+  height: 20%;
+  width: 20%;
+}
+/* download buttons */
+.download-button {
+margin: 5% 3% 5% 0
 }
 
-.email-title {
-  padding-bottom: 1%
+/* Title Section */
+
+#title .container-fluid {
+padding: 3% 15% 7%;
 }
 
-/* features */
+/* Title image */
+.title-image {
+width: 60%;
+transform: rotate(25deg);
+position: absolute;
+right: 30%;
+border-radius: 75%
+}
+
+/* features Section */
 
 #features {
-  padding: 23px;
+position: relative;
 }
 
-.list {
-  display: flex;
-  margin: auto;
-  width: 50%;
-  padding: 1%;
+.feature-title {
+font-size: 1.5rem;
+}
+.feat-box {
+padding: 5%
 }
 
-.icon, {
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  margin: 41px 17px 0px 0px;
-  padding: 13px;
+.h3-icon {
+color: #ef8172;
+margin-bottom: 1rem;
 }
 
-.discription {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: auto;
+.h3-icon:hover {
+color: #ff4c68;
 }
 
-.feature-icons {
-  height: 70%;
-  width: 70%;
+/* Testimonials */
+
+#testimonials {
+background-color: #ef8172;
 }
 
-#showcase {
-  display: flex;
-  justify-content: center;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -100;
-  width: 400px;
-  height: 400px;
+.testimonial-text {
+font-sie: 3rem;
+line-height: 1.5;
+}
+
+.testimonial-image{
+width: 30%;
+border-radius: 100%;
+margin: 20px;
+}
+
+#press{
+background-color: #ffff;
 
 }
 
+.press-logo{
+width: 15%;
+margin: 20px 20px 50px;
+}
 
-/* Pricing */
+/* pricing section */
 
 #pricing {
-  display: flex;
-  flex-direction: row;
-  margin-top: 71px;
-  justify-content: center;
-  text-align: center;
+padding: 100px;
+
 }
 
-.img-option {
-    width: 250px;
-    height: 170px;
-    border: 3px solid black;
+.price-text {
+font-family: 'Oswald';
+font-size: 3rem;
+line-height: 1.5;
 }
 
-#box_of_cupcakes {
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: calc(100%/3);
-    margin: 11px;
-    border: 7px solid rgb(0,0,0);
-    border-radius: 9px;
+.btn.btn-lg.btn-block.btn-dark {
+  font-family: 'Oswald';
 }
 
-#wedding_cakes {
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: calc(100%/3);
-    margin: 11px;
-    border: 7px solid rgb(0,0,0);
-    border-radius: 9px;
+.pricing-coloumn {
+padding: 3% 2%;
 }
 
-#celebration_cake {
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: calc(100%/3);
-    margin: 11px;
-    border: 7px solid rgb(0,0,0);
-    border-radius: 9px;
-}
+/* footer */
 
-.option {
-   font-size: 23px;
-   text-align: center;
-   padding: 7px;
- }
-
- .btn {
-    padding: 13px;
-    width: 97px;
-  }
-
-  .btn:hover {
-   background-color: #7d5a5a;
-   transition: background-color 2s;
-  }
-
-  li {
-    text-align: left;
-  }
-
-
-footer {
-  margin: auto;
-  text-align: center;
+.copyright {
+padding-top: 1%;
 }
 
 @media (max-width: 1028px) {
 
-#header {
-  flex-wrap: wrap;
+#title {
+  text-align: center;
+}
+
+.title-image {
+  position: static;
+  transform: rotate(0);
 }
 }
