@@ -69,9 +69,8 @@ font-family: "Oswald"
 }
 
 .navbar-img {
-  border-radius: 50%;
-  height: 20%;
-  width: 20%;
+  height: 80%;
+  width: 80%;
 }
 /* download buttons */
 .download-button {
@@ -178,5 +177,4 @@ padding-top: 1%;
 .title-image {
   position: static;
   transform: rotate(0);
-}
 }
