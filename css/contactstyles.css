@@ -1,0 +1,21 @@
+:root {
+--color-white: #f3f3f3;
+--color-darkblue: #1b1b32;
+--color-darkblue-alpha: rgba(24, 24, 45, 0.6);
+--color-green: #5b8c85;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Oswald', sans-serif;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.4;
+color: var(--color-white);
+margin: 0;
+}
