@@ -1,102 +1,140 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Cakes by Emily Eve</title>
-  <link rel="stylesheet" href="css/contactstyles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<title>Survey Form</title>
+
+<!-- CSS Stylesheets -->
+<link rel="stylesheet" href="css/contactstyles.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+<!-- Bootstrap scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <h1 id="title" class="text-center">Consultation Form</h1>
-      <p id="description" class="description text-center">
-        Thank you for taking the time to fill out this form.
+<div class="container">
+  <header class="header">
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href=""><img class="navbar-img" src="images\cbee_logo.svg" alt="emily_eve"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="..\ProductLandingPage\contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <h1 id="title" class="text-center">Contact me</h1>
+    <p id="description" class="description text-center">
+      Let me know what you would like
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Mobile</label>
+      <input type="tel" name="age" id="number" class="form-control" placeholder="Mobile" />
+    </div>
+
+    <div class="form-group">
+      <p>Would you like a wedding cake consultation?</p>
+      <label>
+        <input name="user-recommend" value="yes" type="radio" class="input-radio" checked />Yes</label>
+      <label>
+        <input name="user-recommend" value="no" type="radio" class="input-radio" />No</label>
+    </div>
+
+    <div class="form-group">
+      <p>
+        When are you available?
       </p>
-    </header>
-    <form id="survey-form">
-      <div class="form-group">
-        <label id="name-label" for="name">Name</label>
-        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
-      </div>
-      <div class="form-group">
-        <label id="email-label" for="email">Email</label>
-        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
-      </div>
-      <div class="form-group">
-        <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
-        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
-      </div>
-      <div class="form-group">
-        <p></p>
-        <select id="dropdown" name="role" class="form-control" required>
-          <option disabled selected value></option>
-          <option value="student"></option>
-          <option value="job"></option>
-          <option value="learner"></option>
-          <option value="preferNo"></option>
-          <option value="other"></option>
-        </select>
-      </div>
+      <label><input name="prefer" value="available" type="datetime-local" class="input-checkbox" /></label>
+    </div>
 
-      <div class="form-group">
-        <p></p>
-        <label>
-          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked /></label>
-        <label>
-          <input name="user-recommend" value="maybe" type="radio" class="input-radio" /></label>
+    <div class="form-group">
+      <p>Sponge Flavour</p>
+      <select id="dropdown" name="sponge-flavour" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="vanila">Vanilla</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="carrot">Carrot</option>
+        <option value="Coffee">Coffee</option>
+        <option value="Lemon">Lemon</option>
+      </select>
+    </div>
 
-        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" /></label>
-      </div>
 
-      <div class="form-group">
-        <p>
 
-        </p>
-        <select id="most-like" name="mostLike" class="form-control" required>
-          <option disabled selected value></option>
-          <option value="challenges"></option>
-          <option value="projects"></option>
-          <option value="community"></option>
-          <option value="openSource"></option>
-        </select>
-      </div>
+    <div class="form-group">
+      <p>
+        Filling
+      </p>
+      <select id="most-like" name="filling" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="vanilla_buttercream">Vanilla Buttercream</option>
+        <option value="vanilla_buttercream_raspberryjam">Vanilla Buttercream/Raspberry Jam</option>
+        <option value="chocolate_ganache">Chocolate Ganache</option>
+        <option value="chocolate_buttercream">Chocolate Buttercream</option>
+        <option value="lemon_buttercream">Lemon Buttercream/Lemon Curd</option>
+        <option value="creamcheese">Creamcheese</option>
+        <option value="coffee_buttercream">Coffee Buttercream</option>
 
-      <div class="form-group">
-        <p>
 
-          <span class="clue"></span>
-        </p>
+      </select>
+    </div>
 
-        <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" /></label>
-        <label>
-          <input name="prefer" value="back-end-projects" type="" class="" /></label>
-        <label><input name="prefer" value="" type="checkbox" class="" /></label>
-        <label><input name="prefer" value="" type="checkbox" class="" /></label>
-        <label><input name="prefer" value="" type="checkbox" class="" /></label>
-        <label><input name="prefer" value="" type="checkbox" class="" /></label>
-        <label><input name="prefer" value="" type="checkbox" class="" /></label>
-        <label><input name="prefer" value="" type="checkbox" class="" /></label>
-        <label><input name="prefer" value="" type="checkbox" class="" /></label>
-        <label><input name="prefer" value="" type="checkbox" class="" /></label>
-        <label><input name="prefer" value="" type="checkbox" class="" /></label>
-      </div>
+    <div class="form-group">
+      <p>
+        When would you like it ready?
+      </p>
+      <label><input name="prefer" value="ready" type="datetime-local" class="input-checkbox" /></label>
+    </div>
 
-      <div class="form-group">
-        <p></p>
-        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
-      </div>
+    <div class="form-group">
+      <p>What design would you like?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Please give me as much detail as you can..."></textarea>
+    </div>
 
-      <div class="form-group">
-        <button type="submit" id="submit" class="submit-button">
-          Submit
-        </button>
-      </div>
-    </form>
-  </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
 
 </body>
 
